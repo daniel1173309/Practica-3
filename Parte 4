@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    for(char letra='A'; letra<='Z';letra++){
+        if (letra == 'D') {
+            printf("%c es la inicial de Daniel\n", letra);
+        } else if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+            printf("%c es una vocal\n", letra);
+        } else {
+            printf("%c es una consonante\n", letra);
+        }
+    }
+    return 0;
+}
