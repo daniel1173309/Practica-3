@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    for (i = 1; i <= 5; i++) {
+        // Imprime espacios en blanco antes de los asteriscos
+        for (j = 1; j <= 5 - i; j++) {
+            printf(" ");
+        }
+
+        // Imprime los asteriscos
+        for (j = 1; j <= 2 * i - 1; j++) {
+            printf("%d",i);
+        }
+
+        // Imprime un salto de línea al final de cada fila
+        printf("\n");
+    }
+
+    return 0;
+}
