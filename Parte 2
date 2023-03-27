@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int numero, i, suma=0;
+    
+    printf("Introduce un número: ");
+    scanf("%d", &numero);
+    
+    if (numero > 0) {
+        for (i = 1; i <= numero; i += 2) {
+            suma += i;
+        }
+        printf("La suma de los números impares entre 0 y %d es %d.\n", numero, suma);
+    } else if (numero < 0) {
+        for (i = numero; i <= 0; i += 2) {
+            suma += i;
+        }
+        printf("La suma de los números impares entre %d y 0 es %d.\n", numero, suma);
+    } else {
+        printf("El número introducido es cero, por lo que la suma es cero.\n");
+    }
+    
+    return 0;
+}
