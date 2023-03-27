@@ -1,0 +1,28 @@
+#include <stdio.h> 
+#include <stdlib.h>
+
+int main() {
+	int lanzamiento, numero_deseado, i, contador=0,x; 
+	printf("cuantas veces quieres lanzar el dado? ");
+	scanf("%d", &lanzamiento);
+	printf("Que valor te interesa? ");
+	scanf("%d", &numero_deseado);
+	if(numero_deseado>=7){
+	            printf("error ese numero no se encuentra en el dado\n");
+	        }
+	 else{
+	for(i=1;i<=lanzamiento;i++){
+	    
+	         x=rand() % 7;
+	        if(x==numero_deseado){ //contador para saber cuantas veces cayo el numero
+	            contador++;
+	        }
+	     
+	        printf("%d\n",x);
+	     
+		}
+		
+		printf("El numero %d salio %d veces", numero_deseado, contador);
+	 }
+	return 0;
+}
